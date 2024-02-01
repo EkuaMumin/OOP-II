@@ -1,4 +1,4 @@
-package Vehicle;
+package Lab1;
 public class Vehicle
 {
     private String make;
@@ -45,5 +45,31 @@ public class Vehicle
     public void setVehicleType(String type)
     {
         this.type = type;
+    }
+
+    public interface LandVehicle {
+        void drive();
+    }
+    
+    public interface SeaVehicle {
+        void sail();
+    }
+    
+    public interface AirVehicle {
+        void fly();
+    }
+
+    public interface Amphibious
+    {
+        void dock();
+
+        void launch();
+    }
+
+    public interface ElectricVehicle
+    {
+        int MAX_CHARGE_TIME = 8;
+        
+        void charge();
     }
 }

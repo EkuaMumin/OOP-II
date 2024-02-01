@@ -1,4 +1,4 @@
-package Vehicle;
+package Lab1;
 
 public class Car extends Vehicle 
 {
